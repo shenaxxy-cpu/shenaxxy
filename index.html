@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>shenaxxy.org</title>
+<style>
+    body {
+        background-image: url('https://st5.depositphotos.com/35914836/63547/i/450/depositphotos_635479512-stock-photo-brown-wooden-wall-texture-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        text-align: center;
+    }
+    header a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .content {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+    .image-container {
+        text-align: center;
+        margin-top: 20px;
+        display: none; /* Initially hide the image container */
+    }
+    .image-container img {
+        max-width: 100%; /* Ensure the image fits within container */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    button {
+        font-size: 20px; /* Increase the font size */
+        background-color: lightblue; /* Set the background color */
+        color: black; /* Set the text color */
+        padding: 10px 20px; /* Add padding */
+        border: 2px solid black; /* Add black border */
+        border-radius: 5px; /* Add border radius */
+        cursor: pointer; /* Change cursor on hover */
+    }
+    button:hover {
+        background-color: #add8e6; /* Change background color on hover */
+    }
+    .social-icons {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+    .social-icons a {
+        margin-right: 10px;
+    }
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .content {
+            margin: 20px;
+            padding: 15px;
+        }
+        button {
+            font-size: 18px;
+            padding: 8px 16px;
+        }
+        .social-icons {
+            bottom: 10px;
+            left: 10px;
+        }
+        .social-icons img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .content {
+            margin: 10px;
+            padding: 10px;
+        }
+        button {
+            font-size: 16px;
+            padding: 6px 12px;
+        }
+        header {
+            padding: 5px;
+        }
+        footer {
+            padding: 5px;
+        }
+        .social-icons {
+            bottom: 5px;
+            left: 5px;
+        }
+        .social-icons img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+</style>
+<script>
+    function toggleImage() {
+        var imageContainer = document.querySelector('.image-container');
+        imageContainer.style.display = imageContainer.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+</head>
+<body>
+
+<header>
+    <a href="#">Home</a>
+</header>
+
+<main>
+    <div class="content">
+        <h1><b>WELCOME TO OUR WEB!</b></h1>
+        <p>Thanks us later for wasting your time!!</p>
+        <button onclick="toggleImage()">click</button>
+    </div>
+    <div class="image-container">
+        <img src="omg.jpg" alt="Sample Image">
+    </div>
+</main>
+
+<footer>
+    &copy; 2024 Your Website Name
+</footer>
+
+<div class="social-icons">
+    <a href="https://www.tiktok.com/@yourprofile" target="_blank">
+        <img src="tiktok2.png" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank">
+        <img src="insta.png" alt="Instagram">
+    </a>
+</div>
+
+<audio autoplay loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
